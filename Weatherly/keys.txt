@@ -1,0 +1,21 @@
+Google Maps Geocoding API Key:
+
+AIzaSyAPE6dciKIzg-bozKSVdR-BWdbe7XIZJ7s
+
+
+Geocoding request and response (latitude/longitude lookup w/ my key):
+
+https://maps.googleapis.com/maps/api/geocode/json?address=41764&key=AIzaSyAPE6dciKIzg-bozKSVdR-BWdbe7XIZJ7s
+
+
+———————————————————————————————————————————
+
+
+Dark Sky (Weather) API Key:
+
+8fa98e53470b4d3f106745f4661d9a1f
+
+
+API Call Link:
+
+https://api.darksky.net/forecast/8fa98e53470b4d3f106745f4661d9a1f/37.8267,-122.4233

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Weatherly by Brandon Fields</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Official Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <!--BOOTSTRAP THEME GOES UNDER THIS LINE-->
+    <link rel="stylesheet" href="superhero.css">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="weatherly.css">
+    <script src="https://use.fontawesome.com/97825a4697.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" alt="Weatherly"><b>Weatherly</b></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" alt="Home">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="http://www.accuweather.com/en/us/smilax-ky/41764/weather-forecast/2194989" target="_blank" alt="Daily Forecast">Daily Forecast</a></li>
+                
+                <li><a href="http://www.accuweather.com/en/us/smilax-ky/41764/daily-weather-forecast/2194989" target="_blank"
+                        alt="Weekly Forecast">Weekly Forecast</a></li>
+                <li class="social facebook"><a href="http://www.facebook.com/sharer.php?u"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="container"> </div>
+    <div>
+        <input type="text" id="zip" placeholder="Enter Location">
+        <button id="submit">Find Weather</button>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-4 card1">
+            <ul class="tempPrint conditionPrint precip city"></ul>
+            <input type="text" id="zip" placeholder="Enter Location">
+            <button id="submit">Find Weather</button>
+        </div>
+        <div class="col-md-4 card2">
+            <ul class="tempPrint conditionPrint precip city"></ul>
+            <input type="text" id="zip" placeholder="Enter Location">
+            <button id="submit">Find Weather</button>
+        </div>
+        <div class="col-md-4 card3">
+            <ul class="tempPrint conditionPrint precip city"></ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 card4">
+            <ul class="tempPrint conditionPrint precip city"></ul>
+        </div>
+        <div class="col-md-4 card5">
+            <ul class="tempPrint conditionPrint precip city"></ul>
+        </div>
+        <div class="col-md-4 card6">
+            <ul class="tempPrint conditionPrint precip city"></ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- Official JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Official Bootstrap -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <!-- Our project JS -->
+    <script src="weatherly.js"></script>
+</body>
+
+</html>

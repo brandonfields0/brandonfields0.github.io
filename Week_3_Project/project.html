@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Official Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <!--Bootstrap theme goes under this line-->
+    <link rel="stylesheet" href="bs_theme.css">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="project.css">
+    <script src="https://use.fontawesome.com/97825a4697.js"></script>
+</head>
+
+<body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container centered">
+        <div class="w3-card-8">
+            <div class="row centered">
+                <div class="center-block">
+                    <h2>Tip Calculator</h2>
+                    <hr width="50%" />
+                    <form>
+                        <label>Bill Amount:</label>
+                        <br />
+                        <input type="tel" id="bill" maxlength="6" placeholder="Amount"></input>
+                        <hr width="50%" />
+
+                        <label> Service Rating:</label>
+                        <br />
+                        <select id="service">
+                    <option disabled selected value="0">--- Choose service rating ---</option>
+                    <option value="0.20">20% - Fantastic</option>
+                    <option value="0.15">15% - Good</option>
+                    <option value="0.10">10% - Average</option>
+                    <option value="0.05">5% - Bad</option>
+                    </select>
+                        <br />
+                        <hr width="50%" />
+
+                        <label>Split:</label>
+                        <br />
+                        <input type="text" id="total" maxlength="1" max="9" min="0" placeholder=""></input>
+                        <hr width="50%" />
+
+                        <button type="button" id="submit">Calculate</button>
+                        <button type="button reset">Clear</button>
+                        <br />
+                        <div class="fa fa-facebook-square fa-2x" data-href="https://github.com/brandonfields0/brandonfields0.github.io" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fbrandonfields0%2Fbrandonfields0.github.io&amp;src=sdkpreparse">Share</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="totalTip">
+        <sup></sup><span id="tip"></span>
+        <small id="each"></small>
+    </div>
+    </div>
+
+
+
+
+
+
+    <!-- Official JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Official Bootstrap -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <!-- Our project JavaScript -->
+    <script src="project2.js"></script>
+</body>
+
+
+</html>

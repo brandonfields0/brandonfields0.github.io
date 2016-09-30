@@ -1,0 +1,36 @@
++   impliment bootstrap
++   impliment jqueiry
++   impliment ajax
++   set up HTML page
++  cards
++  print onto cards
+ 
+ 
+        Location
+             City
+                 Call Google API
+  +      Temperature
+              call the dark SKY!
+   +     Conditions
+              call the dark sky!
+        high Temperature
+              call the dark sky!
+        low Temperature
+              call the dark sky!
+
+google API
+   use the zip
+   call the City
+   print the city onto the card
+
+
+calling a zip code
+    google API
+        fetch the lat
+        fetch the log
+              change the darksky URL with the lat and log function we just created
+
+
+
+
+

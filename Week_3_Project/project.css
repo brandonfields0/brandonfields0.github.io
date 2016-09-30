@@ -1,0 +1,53 @@
+
+body {
+    background-image: url(http://cliparts.co/cliparts/kiM/KrG/kiMKrGGeT.jpg) center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: url(http://ludumdare.com/compo/wp-content/uploads/2012/08/overlay.png) center;
+    width: 400px;
+    margin: 40px auto 0;
+    padding: 100px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: center;
+}
+
+.card > .container {
+    position: relative;
+    left: 50%;
+}
+
+.center-block {  
+    width:250px;  
+    padding:10px;
+    }  
+
+h2 {
+    margin: 20px;
+    padding: 20px;
+}
+
+option {
+    color: darkgrey;
+}
+
+.card-hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

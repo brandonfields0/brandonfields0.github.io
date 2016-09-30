@@ -1,0 +1,41 @@
+navbar {
+    float: top;
+}
+.col-md-4{
+    width: 260px;
+    height: 280px;
+    border: 4px solid lightgrey;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    margin: 6px;
+    float: center;
+    text-align: center;
+}
+
+.list{
+    position: absolute;
+}
+
+.row {
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    float: right;
+}
+
+.tempPrint {
+    position: top center;
+    font-size: 22px;
+}
+
+.conditionPrint {
+    position: bottom;
+}
+
+li {
+    position: center;
+}
+
+ul {
+    list-style-type: none;
+}

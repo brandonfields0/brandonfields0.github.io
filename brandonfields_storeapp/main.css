@@ -1,0 +1,112 @@
+.header img {
+  float: left;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+.header h1 {
+ position: relative;
+ padding: 25px 50px;
+ font-size: 45px
+}
+
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    margin: auto;
+}
+
+.banner {
+    border: grey;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 65%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: slategrey;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: slategrey;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.productbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: slategrey;
+    text-shadow: none;
+    display: block;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.appbar {
+    text-align: center; 
+    padding: 40px;
+    text-decoration: none;
+}
+
+a nav :link {
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.foot2 {
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+figcaption {
+    padding: 12px;
+    color: black;
+}
+
+#wrapper {
+    width: auto;
+    margin: auto;
+}
