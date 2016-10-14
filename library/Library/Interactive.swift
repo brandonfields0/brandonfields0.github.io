@@ -1,8 +1,8 @@
 import Foundation
 
 class Library {
-    private var done: Bool = false;
-    private var currentInput: String = "x1";
+    private var done: Bool = false
+    private var currentInput: String = "x1"
     private var io = Io()
     
     var booksInLibrary = [
