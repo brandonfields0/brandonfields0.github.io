@@ -32,13 +32,13 @@ class Library {
         if currentInput == "1" {
             booksAvail()
             
-        }else if currentInput == "2" {
+        } else if currentInput == "2" {
             checkOut()
         
-        }else if currentInput == "3"{
+        } else if currentInput == "3"{
             checkIn()
         
-        }else if currentInput == "4"{
+        } else if currentInput == "4"{
             exitPage()
 
         }
@@ -65,7 +65,7 @@ class Library {
             if currentInput == "1" {
                 startingPage()
             }
-        }else if currentInput == "2" {
+        } else if currentInput == "2" {
             booksInLibrary[2] = "GOOSEBUMPS by RL Stine"
             print("GOOSEBUMPS by RL Stine is CHECKED OUT")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
@@ -73,7 +73,7 @@ class Library {
             if currentInput == "1" {
                 startingPage()
             }
-        }else if currentInput == "3" {
+        } else if currentInput == "3" {
             booksInLibrary[3] = "SCARY STORIES TO TELL IN THE DARK by Alvin Schwartz"
             print("SCARY STORIES TO TELL IN THE DARK by Alvin Schwartz is CHECKED OUT")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
@@ -81,7 +81,7 @@ class Library {
             if currentInput == "1" {
                 startingPage()
             }
-        }else if currentInput == "4" {
+        } else if currentInput == "4" {
             booksInLibrary[4] = "THE CALL OF CTHLULU by HP Lovecraft"
             print("THE CALL OF CTHLULU by HP Lovecraft is CHECKED OUT")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
@@ -89,7 +89,7 @@ class Library {
             if currentInput == "1" {
                 startingPage()
             }
-        }else if currentInput == "5" {
+        } else if currentInput == "5" {
             booksInLibrary[5] = "NIGHT OF THE LIVING DEAD: BEHIND THE SCENES by John Russo"
             print("NIGHT OF THE LIVING DEAD: BEHIND THE SCENES by John Russo is CHECKED OUT")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
@@ -97,12 +97,12 @@ class Library {
             if currentInput == "1" {
                startingPage()
             
-        }else{
+        } else{
             print("ERROR: CHOOSE ANOTHER OPTION")
             }
         }
     }
-    func checkIn(){
+    func checkIn() {
         
         io.writeOutput("ENTER BOOK NUMBER TO CHECK IN")
         currentInput = io.getInput()
@@ -111,27 +111,27 @@ class Library {
             print("IT by Stephen King HAS BEEN CHECKED IN. THANK YOU.")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             
-        }else if currentInput == "2" {
+        } else if currentInput == "2" {
             booksInLibrary[2] = "GOOSEBUMPS by RL Stine"
             print("GOOSEBUMPS by RL Stine HAS BEEN CHECKED IN. THANK YOU.")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             
-        }else if currentInput == "3" {
+        } else if currentInput == "3" {
             booksInLibrary[3] = "SCARY STORIES TO TELL IN THE DARK by Alvin Schwartz"
             print("SCARY STORIES TO TELL IN THE DARK by Alvin Schwartz HAS BEEN CHECKED IN. THANK YOU.")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             
-        }else if currentInput == "4" {
+        } else if currentInput == "4" {
             booksInLibrary[4] = "THE CALL OF CTHLULU by HP Lovecraft"
             print("THE CALL OF CTHLULU by HP Lovecraft HAS BEEN CHECKED IN. THANK YOU.")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             
-        }else if currentInput == "5" {
+        } else if currentInput == "5" {
             booksInLibrary[5] = "NIGHT OF THE LIVING DEAD: BEHIND THE SCENES by John Russo"
             print("NIGHT OF THE LIVING DEAD: BEHIND THE SCENES by John Russo HAS BEEN CHECKED IN. THANK YOU.")
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             
-        }else{
+        } else{
             print("ERROR: CHOOSE ANOTHER OPTION")
         }
     }
