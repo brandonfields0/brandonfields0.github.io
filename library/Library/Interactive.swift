@@ -11,17 +11,16 @@ class Library {
         3 : "SCARY STORIES TO TELL IN THE DARK by Alvin Schwartz",
         4 : "THE CALL OF CTHLULU by HP Lovecraft",
         5 : "NIGHT OF THE LIVING DEAD: BEHIND THE SCENES by John Russo",
-        
-    ]
+        ]
     
-    func go(){
+    func go() {
         while !done {
-            welcomeMenu()
+            startingPage()
             
         }
     }
     
-    func welcomeMenu()-> String {
+    func startingPage()-> String {
         
         io.writeOutput("BRANDON'S VERY SMALL HOME LIBRARY OF HORROR BOOKS")
         io.writeOutput("Please type in number below to choose section.")
@@ -32,23 +31,23 @@ class Library {
         currentInput = io.getInput()
         
         if currentInput == "1" {
-            listBooks()
+            booksAvail()
             
         }else if currentInput == "2" {
-            bookCheckout()
+            checkOut()
         
         }else if currentInput == "3"{
-            bookCheckin()
+            checkIn()
         
         }else if currentInput == "4"{
-            exitProgram()
+            exitPage()
 
         }
         
         return currentInput
     }
     
-    func listBooks() {
+    func booksAvail() {
         
         let booksSorted = booksInLibrary.keys.sorted()
         for key in booksSorted{
@@ -57,7 +56,7 @@ class Library {
         }
     }
     
-    func bookCheckout(){
+    func checkOut(){
         io.writeOutput("ENTER BOOK NUMBER TO CHECKOUT")
         currentInput = io.getInput()
         if currentInput == "1"{
@@ -66,7 +65,7 @@ class Library {
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             currentInput = io.getInput()
             if currentInput == "1"{
-                welcomeMenu()
+                startingPage()
             }
         }else if currentInput == "2"{
             booksInLibrary[2] = "GOOSEBUMPS by RL Stine"
@@ -74,7 +73,7 @@ class Library {
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             currentInput = io.getInput()
             if currentInput == "1"{
-                welcomeMenu()
+                startingPage()
             }
         }else if currentInput == "3"{
             booksInLibrary[3] = "SCARY STORIES TO TELL IN THE DARK by Alvin Schwartz"
@@ -82,7 +81,7 @@ class Library {
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             currentInput = io.getInput()
             if currentInput == "1"{
-                welcomeMenu()
+                startingPage()
             }
         }else if currentInput == "4"{
             booksInLibrary[4] = "THE CALL OF CTHLULU by HP Lovecraft"
@@ -90,7 +89,7 @@ class Library {
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             currentInput = io.getInput()
             if currentInput == "1"{
-                welcomeMenu()
+                startingPage()
             }
         }else if currentInput == "5"{
             booksInLibrary[5] = "NIGHT OF THE LIVING DEAD: BEHIND THE SCENES by John Russo"
@@ -98,14 +97,14 @@ class Library {
             io.writeOutput("PRESS 1 TO GET TO START MENU")
             currentInput = io.getInput()
             if currentInput == "1"{
-                welcomeMenu()
+               startingPage()
             
         }else{
             print("ERROR: CHOOSE ANOTHER OPTION")
             }
         }
     }
-    func bookCheckin(){
+    func checkIn(){
         
         io.writeOutput("ENTER BOOK NUMBER TO CHECK IN")
         currentInput = io.getInput()
@@ -141,7 +140,7 @@ class Library {
         
     }
    
-    func exitProgram(){
+    func exitPage() {
         done = true
     }
     
